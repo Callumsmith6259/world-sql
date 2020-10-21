@@ -1,0 +1,11 @@
+SELECT COUNT(ID) FROM city WHERE (CountryCode) = 'USA;
+SELECT Population, LifeExpectancy
+    -> FROM country
+    -> WHERE Name='argentina'
+    -> ;
+SELECT LifeExpectancy FROM country ORDER BY LifeExpectancy DESC LIMIT 1;
+SELECT c1.Name FROM city c1 JOIN country c2 ON c1.ID=c2.Capital WHERE c1.CountryCode='ESP';
+SELECT cl.Language FROM countrylanguage cl JOIN country c ON cl.CountryCode=c.Code WHERE c.Region='Southeast Asia
+';
+SELECT Name FROM city WHERE name LIKE 'F%' LIMIT 25;
+
